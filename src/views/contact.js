@@ -12,12 +12,12 @@ const Contact = (props) => {
         <title>Contact | Kristash</title>
         <meta
           name="description"
-          content="Elevate your online presence with Kristash, your trusted digital marketing agency in Omaha, NE. Drive results with expert SEO, PPC, social media, &amp; web design."
+          content="Kristash, your digital partner in Omaha. Our Contact page offers expert services in web design, SEO, local SEO, content creation, logo design, branding, &amp; business coaching."
         />
         <meta property="og:title" content="Contact | Kristash" />
         <meta
           property="og:description"
-          content="Elevate your online presence with Kristash, your trusted digital marketing agency in Omaha, NE. Drive results with expert SEO, PPC, social media, &amp; web design."
+          content="Kristash, your digital partner in Omaha. Our Contact page offers expert services in web design, SEO, local SEO, content creation, logo design, branding, &amp; business coaching."
         />
       </Helmet>
       <div className="contact-header">
@@ -27,6 +27,7 @@ const Contact = (props) => {
         >
           <a
             href="https://kristash.com"
+            id="kristash logo"
             target="_blank"
             rel="noreferrer noopener"
             className="contact-logo logo"
@@ -132,7 +133,9 @@ const Contact = (props) => {
       <div className="contact-hero">
         <div className="contact-hero1 heroContainer">
           <div className="contact-container1">
-            <h1 className="contact-hero-heading heading1">Contact</h1>
+            <h1 id="contact page" className="contact-hero-heading heading1">
+              Contact
+            </h1>
           </div>
         </div>
       </div>
@@ -140,12 +143,13 @@ const Contact = (props) => {
         <div className="faqContainer">
           <div className="contact-faq2">
             <form
+              id="contact form for kristash"
               name="contact-form"
               enctype="multipart/form-data"
               autoComplete="on"
               className="contact-contact-form"
             >
-              <label>Name</label>
+              <label id="name">Name</label>
               <input
                 type="text"
                 name="Name"
@@ -154,7 +158,7 @@ const Contact = (props) => {
                 autoComplete="name"
                 className="input"
               />
-              <label>
+              <label id="company name">
                 <br></br>
                 <span>Company Name</span>
                 <br></br>
@@ -166,7 +170,7 @@ const Contact = (props) => {
                 autoComplete="organization"
                 className="input"
               />
-              <label>
+              <label id="phone number">
                 <br></br>
                 <span>Phone Number</span>
               </label>
@@ -179,7 +183,7 @@ const Contact = (props) => {
                 autoComplete="tel"
                 className="input"
               />
-              <label>
+              <label id="email">
                 <br></br>
                 <span>Email</span>
               </label>
@@ -191,7 +195,7 @@ const Contact = (props) => {
                 autoComplete="email"
                 className="input"
               />
-              <label>
+              <label id="website">
                 <br></br>
                 <span>Website</span>
               </label>
@@ -202,7 +206,10 @@ const Contact = (props) => {
                 autoComplete="url"
                 className="input"
               />
-              <label>
+              <label
+                id="pick the service or services you're interested in"
+                htmlFor="kristash logo"
+              >
                 <br></br>
                 <span>Service(s) Interested In:</span>
                 <br></br>
@@ -229,7 +236,7 @@ const Contact = (props) => {
                 <option value="Branding">Branding</option>
                 <option value="Business Coaching">Business Coaching</option>
               </select>
-              <label>
+              <label id="more info">
                 <br></br>
                 <span>More Info</span>
                 <br></br>

@@ -1,11 +1,9 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 
-import Script from 'dangerous-html/react'
 import { Helmet } from 'react-helmet'
 
 import FeatureCard from '../components/feature-card'
-import Question1 from '../components/question1'
 import './resources.css'
 
 const Resources = (props) => {
@@ -30,6 +28,7 @@ const Resources = (props) => {
         >
           <a
             href="https://kristash.com"
+            id="kristash logo"
             target="_blank"
             rel="noreferrer noopener"
             className="resources-logo logo"
@@ -134,105 +133,47 @@ const Resources = (props) => {
       </div>
       <div className="resources-hero">
         <div className="resources-hero1 heroContainer">
-          <div className="resources-container01">
-            <h1 className="resources-hero-heading heading1">Resources</h1>
-            <span className="resources-hero-sub-heading bodyLarge">
-              <span>
-                <span>
-                  <span>
-                    Boost your online presence with our professional services
-                  </span>
-                  <span>
-                    <span
-                      dangerouslySetInnerHTML={{
-                        __html: ' ',
-                      }}
-                    />
-                  </span>
-                </span>
-                <span>
-                  <span>
-                    <span
-                      dangerouslySetInnerHTML={{
-                        __html: ' ',
-                      }}
-                    />
-                  </span>
-                  <span>
-                    <span
-                      dangerouslySetInnerHTML={{
-                        __html: ' ',
-                      }}
-                    />
-                  </span>
-                </span>
-              </span>
-              <span>
-                <span>
-                  <span>
-                    <span
-                      dangerouslySetInnerHTML={{
-                        __html: ' ',
-                      }}
-                    />
-                  </span>
-                  <span>
-                    <span
-                      dangerouslySetInnerHTML={{
-                        __html: ' ',
-                      }}
-                    />
-                  </span>
-                </span>
-                <span>
-                  <span>
-                    <span
-                      dangerouslySetInnerHTML={{
-                        __html: ' ',
-                      }}
-                    />
-                  </span>
-                  <span>
-                    <span
-                      dangerouslySetInnerHTML={{
-                        __html: ' ',
-                      }}
-                    />
-                  </span>
-                </span>
-              </span>
-            </span>
-            <div className="resources-btn-group">
-              <button className="buttonFilled">Get Started</button>
-              <button className="buttonFlat">Learn More →</button>
+          <div className="resources-container1">
+            <h1 id="resources page" className="resources-hero-heading heading1">
+              Resources
+            </h1>
+            <div className="resources-container2">
+              <div className="resources-btn-group">
+                <a
+                  href="mailto:growmybusiness@kristash.com?subject=Grow My Business!"
+                  id="grow my business: email kristash"
+                  className="resources-hero-button1 buttonFilled"
+                >
+                  Grow My Business
+                </a>
+              </div>
+              <Link
+                to="/portfolio"
+                id="past clients: kristash portfolio"
+                className="resources-hero-button2 buttonFlat"
+              >
+                Past Clients →
+              </Link>
             </div>
-          </div>
-        </div>
-      </div>
-      <div className="resources-container02">
-        <h2 className="resources-text14">What&apos;s your SEO score?</h2>
-        <div className="resources-container03">
-          <div className="resources-container04">
-            <Script
-              html={`<!-- Begin MySiteAuditor -->
-<script src="//cdn.mysiteauditor.com/audit-tool.js" type="text/javascript"></script>
-
-<div id="seogroup-embed"  data-apikey="e3be6b3d12972592de7794d0b8bae48e0889223d" data-language="english" data-type="slim" data-hex-color="#000000" data-hex-cta-color="#566822" data-hex-text="#FFFFFF" data-load-bar-color="#61B13B" data-font="Roboto"></div>
-<!-- End MySiteAuditor -->`}
-            ></Script>
           </div>
         </div>
       </div>
       <div className="resources-features">
         <div className="featuresContainer">
-          <div className="resources-features1">
-            <div className="resources-container05">
-              <span className="overline">
-                <span>features</span>
+          <div
+            id="free seo tools from kristash"
+            className="resources-features1"
+          >
+            <div className="resources-container3">
+              <span id="kristash: use our" className="overline">
+                <span>Use Our</span>
                 <br></br>
               </span>
-              <h2 className="resources-features-heading heading2">
-                Our Services
+              <h2
+                id="free resources"
+                className="resources-features-heading heading2"
+              >
+                Free Resources
               </h2>
               <span className="resources-features-sub-heading bodyLarge">
                 <span>
@@ -301,17 +242,17 @@ const Resources = (props) => {
                 </span>
               </span>
             </div>
-            <div className="resources-container06">
+            <div className="resources-container4">
               <FeatureCard
-                heading="Website Design"
-                subHeading="Custom and responsive website designs that showcase your brand."
+                heading="SEO Site Audit"
+                subHeading="Use our SEO Site Audit tool to evaluate the SEO of your website (or your competitor's) for free!"
               ></FeatureCard>
               <FeatureCard
-                heading="Content Creation"
-                subHeading="Creative content when &amp; where you need it. Ex: blog articles, social media posts, or product descriptions; etc."
+                heading="Minify Javascript"
+                subHeading="Too much unnecessary code takes up valuable space and the time spent loading it is time wasted = customers lost."
               ></FeatureCard>
               <FeatureCard
-                heading="Logo Design"
+                heading="Schema"
                 subHeading="Unique and memorable logo designs that represent your business."
               ></FeatureCard>
               <FeatureCard
@@ -330,280 +271,29 @@ const Resources = (props) => {
           </div>
         </div>
       </div>
-      <div className="resources-pricing">
-        <div className="pricingContainer">
-          <div className="resources-container07">
-            <span className="overline">
-              <span>Pricing</span>
-              <br></br>
-            </span>
-            <h2 className="heading2">Choose the Website for Your Business</h2>
-            <span className="resources-pricing-sub-heading bodyLarge">
-              <span>
-                <span>
-                  We offer flexible pricing options to meet your specific needs
-                </span>
-              </span>
-            </span>
-          </div>
-          <div className="resources-container08">
-            <div className="freePricingCard resources-pricing-card">
-              <div className="resources-container09">
-                <span className="resources-text37 heading3">Portfolio</span>
-                <span className="bodySmall">
-                  A basic website for businesses on a tight budget
-                </span>
-              </div>
-              <div className="resources-container10">
-                <span className="resources-text38">
-                  <span>$</span>
-                  <span></span>
-                </span>
-                <span className="resources-free-plan-price">597</span>
-              </div>
-              <div className="resources-container11">
-                <div className="resources-container12">
-                  <span className="resources-text41">✔</span>
-                  <span className="bodySmall">Website design</span>
-                </div>
-                <div className="resources-container13">
-                  <span className="resources-text42">✔</span>
-                  <span className="bodySmall">Logo design</span>
-                </div>
-                <div className="resources-container14">
-                  <span className="resources-text43">✔</span>
-                  <span className="bodySmall">Basic SEO</span>
-                </div>
-                <div className="resources-container15">
-                  <span className="resources-text44">✔</span>
-                  <span className="bodySmall">Limited business coaching</span>
-                </div>
-              </div>
-              <button className="resources-button buttonOutline">
-                Continue with a PORTFOLIO site
-              </button>
-            </div>
-            <div className="basicPricingCard resources-pricing-card1">
-              <div className="resources-container16">
-                <span className="resources-text45 heading3">Professional</span>
-                <span className="bodySmall">
-                  An affordable plan for small businesses
-                </span>
-              </div>
-              <div className="resources-container17">
-                <span className="resources-text46">
-                  <span>$</span>
-                  <span></span>
-                </span>
-                <span className="resources-basic-plan-pricing">847</span>
-              </div>
-              <div className="resources-container18">
-                <div className="resources-container19">
-                  <span className="resources-text49">✔</span>
-                  <span className="bodySmall">
-                    All features of PORTFOLIO site, PLUS:
-                  </span>
-                </div>
-                <div className="resources-container20">
-                  <span className="resources-text51">✔</span>
-                  <span>Take appointments via a Booking Plugin</span>
-                </div>
-                <div className="resources-container21">
-                  <span className="resources-text52">✔</span>
-                  <span className="bodySmall">
-                    Headless CMS integration for adding/updating website content
-                  </span>
-                </div>
-                <div className="resources-container22">
-                  <span className="resources-text53">✔</span>
-                  <span className="bodySmall">Advanced SEO</span>
-                </div>
-                <div className="resources-container23">
-                  <span className="resources-text54">✔</span>
-                  <span className="bodySmall">
-                    Business coaching ZOOM session (2x)
-                  </span>
-                </div>
-              </div>
-              <button className="resources-button1 buttonFilledSecondary">
-                Build me a PROFESSIONAL website
-              </button>
-            </div>
-            <div className="proPricingCard resources-pricing-card2">
-              <div className="resources-container24">
-                <span className="resources-text55 heading3">
-                  <span>e-commerce</span>
-                  <br></br>
-                </span>
-                <span className="bodySmall">
-                  A comprehensive plan for growing businesses
-                </span>
-              </div>
-              <div className="resources-container25">
-                <span className="resources-text58">
-                  <span>$</span>
-                  <span></span>
-                </span>
-                <span className="resources-pro-plan-pricing">1247</span>
-                <span className="resources-text61">/ month</span>
-              </div>
-              <div className="resources-container26">
-                <div className="resources-container27">
-                  <span className="resources-text62">✔</span>
-                  <span className="bodySmall">
-                     All features of PROFESSIONAL website
-                  </span>
-                </div>
-                <div className="resources-container28">
-                  <span className="resources-text64">✔</span>
-                  <span className="bodySmall">Website design</span>
-                </div>
-                <div className="resources-container29">
-                  <span className="resources-text65">✔</span>
-                  <span className="bodySmall">Logo design</span>
-                </div>
-                <div className="resources-container30">
-                  <span className="resources-text66">✔</span>
-                  <span className="bodySmall">Premium SEO</span>
-                </div>
-                <div className="resources-container31">
-                  <span className="resources-text67">✔</span>
-                  <span className="bodySmall">
-                    Extensive business coaching via ZOOM
-                  </span>
-                </div>
-              </div>
-              <button className="resources-button2 buttonFilledSecondary">
-                Build me an E-COMMERCE website
-              </button>
-            </div>
-          </div>
-        </div>
-      </div>
       <div className="resources-banner">
         <div className="bannerContainer resources-banner1">
-          <h1 className="resources-banner-heading heading2">
+          <h1
+            id="we design, optimize, and coach for success"
+            className="resources-banner-heading heading2"
+          >
             We Design, Optimize, and Coach for Success
           </h1>
-          <span className="resources-banner-sub-heading bodySmall">
-            <span>
-              <span>
-                <span>
-                  At our online marketing agency, we offer a range of services
-                  to help businesses and startups thrive in the digital world.
-                  From stunning website designs to effective SEO strategies, we
-                  have the expertise to elevate your brand and drive results.
-                  Partner with us and take your online presence to new heights.
-                </span>
-                <span>
-                  <span
-                    dangerouslySetInnerHTML={{
-                      __html: ' ',
-                    }}
-                  />
-                </span>
-              </span>
-              <span>
-                <span>
-                  <span
-                    dangerouslySetInnerHTML={{
-                      __html: ' ',
-                    }}
-                  />
-                </span>
-                <span>
-                  <span
-                    dangerouslySetInnerHTML={{
-                      __html: ' ',
-                    }}
-                  />
-                </span>
-              </span>
-            </span>
-            <span>
-              <span>
-                <span>
-                  <span
-                    dangerouslySetInnerHTML={{
-                      __html: ' ',
-                    }}
-                  />
-                </span>
-                <span>
-                  <span
-                    dangerouslySetInnerHTML={{
-                      __html: ' ',
-                    }}
-                  />
-                </span>
-              </span>
-              <span>
-                <span>
-                  <span
-                    dangerouslySetInnerHTML={{
-                      __html: ' ',
-                    }}
-                  />
-                </span>
-                <span>
-                  <span
-                    dangerouslySetInnerHTML={{
-                      __html: ' ',
-                    }}
-                  />
-                </span>
-              </span>
-            </span>
-          </span>
-          <button className="buttonFilled">Learn More</button>
-        </div>
-      </div>
-      <div className="resources-faq1">
-        <div className="faqContainer">
-          <div className="resources-faq2">
-            <div className="resources-container32">
-              <span className="overline">
-                <span>FAQ</span>
-                <br></br>
-              </span>
-              <h2 className="resources-text85 heading2">Common Questions</h2>
-              <span className="resources-text86 bodyLarge">
-                <span>
-                  Here are some of the most common questions that we get.
-                </span>
-                <br></br>
-              </span>
-            </div>
-            <div className="resources-container33">
-              <Question1
-                answer="Our online marketing agency offers website design, logo design, SEO, and business coaching services to businesses and startups."
-                question="What services does your online marketing agency offer?"
-              ></Question1>
-              <Question1
-                answer="You can contact our online marketing agency by visiting the 'Contact' page on our website and filling out the contact form or by calling our provided phone number."
-                question="How can I contact your online marketing agency?"
-              ></Question1>
-              <Question1
-                answer="Yes, we offer customized website design solutions tailored to meet the specific needs and preferences of each client."
-                question="Do you offer customized website design solutions?"
-              ></Question1>
-              <Question1
-                answer="To get a logo designed by our agency, you can fill out the logo design request form on our website. Our team will then contact you to discuss your requirements and provide you with design concepts."
-                question="What is the process for getting a logo designed by your agency?"
-              ></Question1>
-              <Question1
-                answer="Yes, we specialize in SEO (Search Engine Optimization) and can help improve your website's search engine rankings through various strategies such as keyword optimization, content creation, and link building."
-                question="Can you help improve my website's search engine rankings?"
-              ></Question1>
-            </div>
-          </div>
+          <Link
+            to="/plans-pricing"
+            id="learn more"
+            className="resources-banner-button buttonFilled"
+          >
+            Learn More
+          </Link>
         </div>
       </div>
       <div className="resources-footer">
         <footer className="footerContainer resources-footer1">
-          <div className="resources-container34">
+          <div className="resources-container5">
             <a
               href="https://kristash.com"
+              id="kristash"
               target="_blank"
               rel="noreferrer noopener"
               className="resources-logo2"
@@ -611,32 +301,45 @@ const Resources = (props) => {
               Kristash
             </a>
             <nav className="resources-nav1 bodySmall resources-nav1">
-              <Link to="/" className="resources-home1 bodySmall">
+              <Link to="/" id="home" className="resources-home1 bodySmall">
                 Home
               </Link>
-              <Link to="/faq" className="resources-faq3 bodySmall">
+              <Link to="/faq" id="faq" className="resources-faq1 bodySmall">
                 FAQ
               </Link>
               <Link
                 to="/plans-pricing"
+                id="plans &amp; pricing"
                 className="resources-plans-pricing1 bodySmall"
               >
                 Plans &amp; Pricing
               </Link>
-              <Link to="/portfolio" className="resources-portfolio1 bodySmall">
+              <Link
+                to="/portfolio"
+                id="portfolio"
+                className="resources-portfolio1 bodySmall"
+              >
                 Portfolio
               </Link>
-              <Link to="/resources" className="resources-resources1 bodySmall">
+              <Link
+                to="/resources"
+                id="resources"
+                className="resources-resources1 bodySmall"
+              >
                 Resources
               </Link>
-              <Link to="/contact" className="resources-contact1 bodySmall">
+              <Link
+                to="/contact"
+                id="contact"
+                className="resources-contact1 bodySmall"
+              >
                 Contact
               </Link>
             </nav>
           </div>
           <div className="resources-separator"></div>
-          <div className="resources-container35">
-            <span className="resources-text89">
+          <div className="resources-container6">
+            <span className="resources-text17">
               <span className="bodySmall">
                 Copyright © 2024,
                 <span
@@ -661,6 +364,7 @@ const Resources = (props) => {
                 className="resources-link1"
               >
                 <svg
+                  id="twitter icon"
                   viewBox="0 0 950.8571428571428 1024"
                   className="resources-icon10 socialIcons"
                 >
@@ -672,6 +376,7 @@ const Resources = (props) => {
                 className="resources-link2"
               >
                 <svg
+                  id="instagram icon"
                   viewBox="0 0 877.7142857142857 1024"
                   className="resources-icon12 socialIcons"
                 >
@@ -685,6 +390,7 @@ const Resources = (props) => {
                 className="resources-link3"
               >
                 <svg
+                  id="facebook icon"
                   viewBox="0 0 602.2582857142856 1024"
                   className="resources-icon14 socialIcons"
                 >

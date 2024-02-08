@@ -436,12 +436,14 @@
 }
 @media(max-width: 479px) {
   .contact-navbar-interactive {
+    height: 100px;
     padding: var(--dl-space-space-unit);
   }
   .contact-mobile-menu1 {
     padding: 16px;
   }
   .contact-hero1 {
+    height: 125px;
     padding-top: var(--dl-space-space-twounits);
     padding-left: var(--dl-space-space-unit);
     padding-right: var(--dl-space-space-unit);
@@ -449,6 +451,12 @@
   }
   .contact-container1 {
     margin-bottom: var(--dl-space-space-unit);
+  }
+  .contact-faq2 {
+    height: 811px;
+  }
+  .contact-contact-form {
+    width: 479px;
   }
   .contact-footer1 {
     padding: var(--dl-space-space-unit);

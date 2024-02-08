@@ -140,9 +140,9 @@ const Page = (props) => {
         <div className="page-banner1 bannerContainer">
           <h1 className="page-banner-heading">
             <span className="heading2">
-              Woops! You&apos;ve reached this page in error. Press the button
-              below to return to the homepage or select an option from the
-              header or foot menu. :)
+              Woops! You&apos;ve reached this page in error. Please press the
+              button below to return to the homepage or select an option from
+              the header or foot menu. :)
             </span>
             <br></br>
           </h1>

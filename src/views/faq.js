@@ -13,12 +13,12 @@ const FAQ = (props) => {
         <title>FAQ | Kristash</title>
         <meta
           name="description"
-          content="Elevate your online presence with Kristash, your trusted digital marketing agency in Omaha, NE. Drive results with expert SEO, PPC, social media, &amp; web design."
+          content="Explore the digital marketing landscape with Kristash FAQs in Omaha. Your go-to resource for insights on SEO, PPC, social media, &amp; more. Boost your online strategy &amp; business success with Kristash!"
         />
         <meta property="og:title" content="FAQ | Kristash" />
         <meta
           property="og:description"
-          content="Elevate your online presence with Kristash, your trusted digital marketing agency in Omaha, NE. Drive results with expert SEO, PPC, social media, &amp; web design."
+          content="Explore the digital marketing landscape with Kristash FAQs in Omaha. Your go-to resource for insights on SEO, PPC, social media, &amp; more. Boost your online strategy &amp; business success with Kristash!"
         />
       </Helmet>
       <div className="faq-header">
@@ -28,6 +28,7 @@ const FAQ = (props) => {
         >
           <a
             href="https://kristash.com"
+            id="kristash logo"
             target="_blank"
             rel="noreferrer noopener"
             className="faq-logo logo"
@@ -133,88 +134,24 @@ const FAQ = (props) => {
       <div className="faq-hero">
         <div className="faq-hero1 heroContainer">
           <div className="faq-container1">
-            <h1 className="faq-hero-heading">
+            <h1 id="faq page" className="faq-hero-heading">
               <span className="heading1 faq-text">FAQ</span>
               <br></br>
             </h1>
-            <span className="faq-hero-sub-heading bodyLarge">
-              <span>
-                <span>
-                  <span>
-                    Boost your online presence with our professional services
-                  </span>
-                  <span>
-                    <span
-                      dangerouslySetInnerHTML={{
-                        __html: ' ',
-                      }}
-                    />
-                  </span>
-                </span>
-                <span>
-                  <span>
-                    <span
-                      dangerouslySetInnerHTML={{
-                        __html: ' ',
-                      }}
-                    />
-                  </span>
-                  <span>
-                    <span
-                      dangerouslySetInnerHTML={{
-                        __html: ' ',
-                      }}
-                    />
-                  </span>
-                </span>
-              </span>
-              <span>
-                <span>
-                  <span>
-                    <span
-                      dangerouslySetInnerHTML={{
-                        __html: ' ',
-                      }}
-                    />
-                  </span>
-                  <span>
-                    <span
-                      dangerouslySetInnerHTML={{
-                        __html: ' ',
-                      }}
-                    />
-                  </span>
-                </span>
-                <span>
-                  <span>
-                    <span
-                      dangerouslySetInnerHTML={{
-                        __html: ' ',
-                      }}
-                    />
-                  </span>
-                  <span>
-                    <span
-                      dangerouslySetInnerHTML={{
-                        __html: ' ',
-                      }}
-                    />
-                  </span>
-                </span>
-              </span>
-            </span>
           </div>
-          <h2 className="faq-text16 heading2">Frequently Asked Questions</h2>
-          <span className="faq-text17 bodyLarge">
-            <span>Here are some of the most common questions that we get.</span>
+          <h2 id="frequently asked questions" className="faq-text2 heading2">
+            Frequently Asked Questions
+          </h2>
+          <span className="faq-text3 bodyLarge">
+            <span>Here are some of the most common questions that we get:</span>
             <br></br>
           </span>
         </div>
       </div>
       <div className="faq-features">
         <div className="faq-features-container featuresContainer">
-          <div className="faq-faq2">
-            <div className="faq-container2">
+          <div id="faq section" className="faq-faq2">
+            <div id="faq section" className="faq-container2">
               <Question1
                 answer="Our online marketing agency offers Website Design, Content Creation, Logo Design, Company Branding, SEO/Local SEO, and Business Coaching services to startups, small businesses, musicians, artists, and many other other entities."
                 question="What services does your online marketing agency offer?"
@@ -239,16 +176,12 @@ const FAQ = (props) => {
           </div>
         </div>
       </div>
-      <div className="faq-pricing"></div>
-      <div className="faq-banner"></div>
-      <div className="faq-faq3">
-        <div className="faq-faq-container faqContainer"></div>
-      </div>
       <div className="faq-footer">
         <footer className="footerContainer faq-footer1">
           <div className="faq-container3">
             <a
               href="https://kristash.com"
+              id="kristash"
               target="_blank"
               rel="noreferrer noopener"
               className="faq-logo2"
@@ -256,30 +189,45 @@ const FAQ = (props) => {
               Kristash
             </a>
             <nav className="faq-nav1">
-              <Link to="/" className="faq-home2 bodySmall">
+              <Link to="/" id="home" className="faq-home2 bodySmall">
                 Home
               </Link>
-              <Link to="/faq" className="faq-faq4 bodySmall">
+              <Link to="/faq" id="faq" className="faq-faq3 bodySmall">
                 FAQ
               </Link>
               <Link
                 to="/plans-pricing"
+                id="plans &amp; pricing"
                 className="faq-plans-pricing2 bodySmall"
               >
                 Plans &amp; Pricing
               </Link>
-              <Link to="/portfolio" className="faq-portfolio2 bodySmall">
+              <Link
+                to="/portfolio"
+                id="portfolio"
+                className="faq-portfolio2 bodySmall"
+              >
                 Portfolio
               </Link>
-              <Link to="/resources" className="faq-resources2 bodySmall">
+              <Link
+                to="/resources"
+                id="resources"
+                className="faq-resources2 bodySmall"
+              >
                 Resources
               </Link>
-              <span className="faq-contact2 bodySmall">Contact</span>
+              <Link
+                to="/contact"
+                id="contact"
+                className="faq-contact2 bodySmall"
+              >
+                Contact
+              </Link>
             </nav>
           </div>
           <div className="faq-separator"></div>
           <div className="faq-container4">
-            <span className="faq-text20">
+            <span className="faq-text6">
               <span className="bodySmall">
                 Copyright © 2024,
                 <span
@@ -301,6 +249,7 @@ const FAQ = (props) => {
             <div className="faq-icon-group1">
               <a href="https://twitter.com/kristashinc" className="faq-link1">
                 <svg
+                  id="twitter icon"
                   viewBox="0 0 950.8571428571428 1024"
                   className="faq-icon10 socialIcons"
                 >
@@ -309,6 +258,7 @@ const FAQ = (props) => {
               </a>
               <a href="https://instagram.com/kristashinc" className="faq-link2">
                 <svg
+                  id="instagram icon"
                   viewBox="0 0 877.7142857142857 1024"
                   className="faq-icon12 socialIcons"
                 >
@@ -322,6 +272,7 @@ const FAQ = (props) => {
                 className="faq-link3"
               >
                 <svg
+                  id="facebook icon"
                   viewBox="0 0 602.2582857142856 1024"
                   className="faq-icon14 socialIcons"
                 >

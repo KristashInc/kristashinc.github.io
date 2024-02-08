@@ -391,8 +391,13 @@
     padding-right: var(--dl-space-space-twounits);
   }
   .page-banner1 {
+    height: 461px;
     padding-left: var(--dl-space-space-twounits);
     padding-right: var(--dl-space-space-twounits);
+    padding-bottom: var(--dl-space-space-halfunit);
+  }
+  .page-banner-heading {
+    width: 608px;
   }
   .page-banner-sub-heading {
     padding-left: var(--dl-space-space-unit);
@@ -419,12 +424,14 @@
 }
 @media(max-width: 479px) {
   .page-navbar-interactive {
+    height: 99px;
     padding: var(--dl-space-space-unit);
   }
   .page-mobile-menu1 {
     padding: 16px;
   }
   .page-hero1 {
+    height: 124px;
     padding-top: var(--dl-space-space-twounits);
     padding-left: var(--dl-space-space-unit);
     padding-right: var(--dl-space-space-unit);
@@ -434,11 +441,15 @@
     margin-bottom: var(--dl-space-space-unit);
   }
   .page-banner1 {
-    height: 714px;
+    height: 519px;
     padding-top: var(--dl-space-space-twounits);
     padding-left: var(--dl-space-space-unit);
     padding-right: var(--dl-space-space-unit);
     padding-bottom: var(--dl-space-space-twounits);
+  }
+  .page-banner-heading {
+    width: 405px;
+    height: 362px;
   }
   .page-footer1 {
     padding: var(--dl-space-space-unit);

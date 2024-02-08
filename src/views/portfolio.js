@@ -13,12 +13,12 @@ const Portfolio = (props) => {
         <title>Portfolio | Kristash</title>
         <meta
           name="description"
-          content="Elevate your online presence with Kristash, your trusted digital marketing agency in Omaha, NE. Drive results with expert SEO, PPC, social media, &amp; web design."
+          content="Digital excellence with Kristash in Omaha. Explore our Portfolio showcasing web design, SEO, local SEO, content creation, logo design, branding, &amp; business coaching. Envision the possibilities!"
         />
         <meta property="og:title" content="Portfolio | Kristash" />
         <meta
           property="og:description"
-          content="Elevate your online presence with Kristash, your trusted digital marketing agency in Omaha, NE. Drive results with expert SEO, PPC, social media, &amp; web design."
+          content="Digital excellence with Kristash in Omaha. Explore our Portfolio showcasing web design, SEO, local SEO, content creation, logo design, branding, &amp; business coaching. Envision the possibilities!"
         />
       </Helmet>
       <div className="portfolio-header">
@@ -28,6 +28,7 @@ const Portfolio = (props) => {
         >
           <a
             href="https://kristash.com"
+            id="kristash logo"
             target="_blank"
             rel="noreferrer noopener"
             className="portfolio-logo logo"
@@ -133,19 +134,23 @@ const Portfolio = (props) => {
       <div className="portfolio-hero">
         <div className="portfolio-hero1 heroContainer">
           <div className="portfolio-container1">
-            <h1 className="portfolio-hero-heading heading1">Portfolio</h1>
+            <h1 id="portfolio page" className="portfolio-hero-heading heading1">
+              Portfolio
+            </h1>
           </div>
         </div>
       </div>
       <div className="portfolio-faq1">
         <div className="faqContainer">
-          <div className="portfolio-faq2">
+          <div id="faq section questions" className="portfolio-faq2">
             <div className="portfolio-container2">
-              <span className="overline">
+              <span id="faq section" className="overline">
                 <span>FAQ</span>
                 <br></br>
               </span>
-              <h2 className="portfolio-text03 heading2">Common Questions</h2>
+              <h2 id="common questions" className="portfolio-text03 heading2">
+                Common Questions
+              </h2>
               <span className="portfolio-text04 bodyLarge">
                 <span>
                   Here are some of the most common questions that we get.
@@ -183,6 +188,7 @@ const Portfolio = (props) => {
           <div className="portfolio-container4">
             <a
               href="https://kristash.com"
+              id="kristash"
               target="_blank"
               rel="noreferrer noopener"
               className="portfolio-logo2"
@@ -190,25 +196,38 @@ const Portfolio = (props) => {
               Kristash
             </a>
             <nav className="portfolio-nav1 bodySmall portfolio-nav1">
-              <Link to="/" className="portfolio-home1 bodySmall">
+              <Link to="/" id="home" className="portfolio-home1 bodySmall">
                 Home
               </Link>
-              <Link to="/faq" className="portfolio-faq3 bodySmall">
+              <Link to="/faq" id="faq" className="portfolio-faq3 bodySmall">
                 FAQ
               </Link>
               <Link
                 to="/plans-pricing"
+                id="plans &amp; pricing"
                 className="portfolio-plans-pricing1 bodySmall"
               >
                 Plans &amp; Pricing
               </Link>
-              <Link to="/portfolio" className="portfolio-portfolio1 bodySmall">
+              <Link
+                to="/portfolio"
+                id="portfolio"
+                className="portfolio-portfolio1 bodySmall"
+              >
                 Portfolio
               </Link>
-              <Link to="/resources" className="portfolio-resources1 bodySmall">
+              <Link
+                to="/resources"
+                id="resources"
+                className="portfolio-resources1 bodySmall"
+              >
                 Resources
               </Link>
-              <Link to="/contact" className="portfolio-contact1 bodySmall">
+              <Link
+                to="/contact"
+                id="contact"
+                className="portfolio-contact1 bodySmall"
+              >
                 Contact
               </Link>
             </nav>
@@ -240,6 +259,7 @@ const Portfolio = (props) => {
                 className="portfolio-link1"
               >
                 <svg
+                  id="twitter icon"
                   viewBox="0 0 950.8571428571428 1024"
                   className="portfolio-icon10 socialIcons"
                 >
@@ -251,6 +271,7 @@ const Portfolio = (props) => {
                 className="portfolio-link2"
               >
                 <svg
+                  id="instagram icon"
                   viewBox="0 0 877.7142857142857 1024"
                   className="portfolio-icon12 socialIcons"
                 >
@@ -264,6 +285,7 @@ const Portfolio = (props) => {
                 className="portfolio-link3"
               >
                 <svg
+                  id="facebook icon"
                   viewBox="0 0 602.2582857142856 1024"
                   className="portfolio-icon14 socialIcons"
                 >

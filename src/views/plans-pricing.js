@@ -13,12 +13,12 @@ const PlansPricing = (props) => {
         <title>Plans & Pricing | Kristash</title>
         <meta
           name="description"
-          content="Elevate your online presence with Kristash, your trusted digital marketing agency in Omaha, NE. Drive results with expert SEO, PPC, social media, &amp; web design."
+          content="Strategic digital success with Kristash in Omaha. Explore our Plans &amp; Pricing for expert web design, SEO (local), content creation, logo design, branding, &amp; business coaching."
         />
         <meta property="og:title" content="Plans &amp; Pricing | Kristash" />
         <meta
           property="og:description"
-          content="Elevate your online presence with Kristash, your trusted digital marketing agency in Omaha, NE. Drive results with expert SEO, PPC, social media, &amp; web design."
+          content="Strategic digital success with Kristash in Omaha. Explore our Plans &amp; Pricing for expert web design, SEO (local), content creation, logo design, branding, &amp; business coaching."
         />
       </Helmet>
       <div className="plans-pricing-header">
@@ -28,6 +28,7 @@ const PlansPricing = (props) => {
         >
           <a
             href="https://kristash.com"
+            id="kristash logo"
             target="_blank"
             rel="noreferrer noopener"
             className="plans-pricing-logo logo"
@@ -146,81 +147,23 @@ const PlansPricing = (props) => {
       <div className="plans-pricing-hero">
         <div className="plans-pricing-hero1 heroContainer">
           <div className="plans-pricing-container01">
-            <h1 className="plans-pricing-hero-heading heading1">
+            <h1
+              id="plans &amp; pricing page"
+              className="plans-pricing-hero-heading heading1"
+            >
               Plans &amp; Pricing
             </h1>
-            <span className="plans-pricing-hero-sub-heading bodyLarge">
-              <span>
-                <span>
-                  <span>
-                    Boost your online presence with our professional services
-                  </span>
-                  <span>
-                    <span
-                      dangerouslySetInnerHTML={{
-                        __html: ' ',
-                      }}
-                    />
-                  </span>
-                </span>
-                <span>
-                  <span>
-                    <span
-                      dangerouslySetInnerHTML={{
-                        __html: ' ',
-                      }}
-                    />
-                  </span>
-                  <span>
-                    <span
-                      dangerouslySetInnerHTML={{
-                        __html: ' ',
-                      }}
-                    />
-                  </span>
-                </span>
-              </span>
-              <span>
-                <span>
-                  <span>
-                    <span
-                      dangerouslySetInnerHTML={{
-                        __html: ' ',
-                      }}
-                    />
-                  </span>
-                  <span>
-                    <span
-                      dangerouslySetInnerHTML={{
-                        __html: ' ',
-                      }}
-                    />
-                  </span>
-                </span>
-                <span>
-                  <span>
-                    <span
-                      dangerouslySetInnerHTML={{
-                        __html: ' ',
-                      }}
-                    />
-                  </span>
-                  <span>
-                    <span
-                      dangerouslySetInnerHTML={{
-                        __html: ' ',
-                      }}
-                    />
-                  </span>
-                </span>
-              </span>
-            </span>
           </div>
         </div>
       </div>
       <div className="plans-pricing-pricing pricingContainer">
         <div className="plans-pricing-container02">
-          <h2 className="heading2">A Custom Website for Your Business</h2>
+          <h2
+            id="a custom website for your business"
+            className="heading2 plans-pricing-pricing-heading"
+          >
+            A Custom Website for Your Business
+          </h2>
           <span className="plans-pricing-pricing-sub-heading bodyLarge">
             <span>
               <span>
@@ -230,52 +173,70 @@ const PlansPricing = (props) => {
           </span>
         </div>
         <div className="plans-pricing-container03">
-          <div className="freePricingCard plans-pricing-pricing-card">
+          <div
+            id="portfolio website"
+            className="freePricingCard plans-pricing-pricing-card"
+          >
             <div className="plans-pricing-container04">
-              <span className="plans-pricing-text16 heading3">Portfolio</span>
+              <span
+                id="portfolio site"
+                className="plans-pricing-text02 heading3"
+              >
+                Portfolio
+              </span>
               <span className="bodySmall">
                 A basic website for an artist or musician that wants to showcase
                 their art/music.
               </span>
             </div>
             <div className="plans-pricing-container05">
-              <span className="plans-pricing-text17">
+              <span className="plans-pricing-text03">
                 <span>$</span>
                 <span></span>
               </span>
               <span className="plans-pricing-free-plan-price">597</span>
             </div>
             <div className="plans-pricing-container06">
-              <span className="plans-pricing-text20">✔</span>
+              <span className="plans-pricing-text06">✔</span>
               <div className="plans-pricing-container07">
                 <div className="plans-pricing-container08">
-                  <span className="plans-pricing-text21">✔</span>
+                  <span className="plans-pricing-text07">✔</span>
                   <span className="bodySmall">Base Website design</span>
                 </div>
                 <div className="plans-pricing-container09">
-                  <span className="plans-pricing-text22">✔</span>
+                  <span className="plans-pricing-text08">✔</span>
                   <span className="bodySmall">Basic Logo design</span>
                 </div>
                 <div className="plans-pricing-container10">
-                  <span className="plans-pricing-text23">✔</span>
+                  <span className="plans-pricing-text09">✔</span>
+                  <span className="bodySmall">Mobile-friendly design</span>
+                </div>
+                <div className="plans-pricing-container11">
+                  <span className="plans-pricing-text10">✔</span>
                   <span className="bodySmall">Basic SEO</span>
                 </div>
                 <span className="bodySmall">
                   Headless CMS integration for adding/updating website content
                 </span>
-                <div className="plans-pricing-container11">
-                  <span className="plans-pricing-text24">✔</span>
+                <div className="plans-pricing-container12">
+                  <span className="plans-pricing-text11">✔</span>
                   <span className="bodySmall">Business Consultation</span>
                 </div>
               </div>
             </div>
-            <button className="plans-pricing-button buttonOutline">
+            <a
+              href="mailto:website@kristash.com?subject=I Need a Portfolio Website"
+              className="plans-pricing-link buttonOutline"
+            >
               Continue with a PORTFOLIO site
-            </button>
+            </a>
           </div>
-          <div className="basicPricingCard plans-pricing-pricing-card1">
-            <div className="plans-pricing-container12">
-              <span className="plans-pricing-text25 heading3">
+          <div
+            id="professional website"
+            className="basicPricingCard plans-pricing-pricing-card1"
+          >
+            <div className="plans-pricing-container13">
+              <span id="professional" className="plans-pricing-text12 heading3">
                 Professional
               </span>
               <span className="bodySmall">
@@ -284,42 +245,52 @@ const PlansPricing = (props) => {
                 chiropractors, holistic health practitioners; etc.)
               </span>
             </div>
-            <div className="plans-pricing-container13">
-              <span className="plans-pricing-text26">
+            <div className="plans-pricing-container14">
+              <span className="plans-pricing-text13">
                 <span>$</span>
                 <span></span>
               </span>
               <span className="plans-pricing-basic-plan-pricing">897</span>
             </div>
-            <div className="plans-pricing-container14">
-              <div className="plans-pricing-container15">
-                <span className="plans-pricing-text29">✔</span>
+            <div className="plans-pricing-container15">
+              <div className="plans-pricing-container16">
+                <span className="plans-pricing-text16">✔</span>
                 <span className="bodySmall">
                   All features of PORTFOLIO site, PLUS:
                 </span>
               </div>
-              <div className="plans-pricing-container16">
-                <span className="plans-pricing-text31">✔</span>
+              <div className="plans-pricing-container17">
+                <span className="plans-pricing-text18">✔</span>
                 <span>Take appointments via a Booking Plugin</span>
               </div>
-              <div className="plans-pricing-container17">
-                <span className="plans-pricing-text32">✔</span>
+              <div className="plans-pricing-container18">
+                <span className="plans-pricing-text19">✔</span>
+                <span>Mobile-optimized design</span>
+              </div>
+              <div className="plans-pricing-container19">
+                <span className="plans-pricing-text20">✔</span>
                 <span className="bodySmall">Advanced SEO</span>
               </div>
-              <div className="plans-pricing-container18">
-                <span className="plans-pricing-text33">✔</span>
+              <div className="plans-pricing-container20">
+                <span className="plans-pricing-text21">✔</span>
                 <span className="bodySmall">
                   Business coaching ZOOM session (2x)
                 </span>
               </div>
             </div>
-            <button className="plans-pricing-button1 buttonFilledSecondary">
+            <a
+              href="mailto:website@kristash.com?subject=I Need a Professional Website"
+              className="plans-pricing-link1 buttonFilledSecondary"
+            >
               Build me a PROFESSIONAL website
-            </button>
+            </a>
           </div>
-          <div className="proPricingCard plans-pricing-pricing-card2">
-            <div className="plans-pricing-container19">
-              <span className="plans-pricing-text34 heading3">
+          <div
+            id="e-commerce website"
+            className="proPricingCard plans-pricing-pricing-card2"
+          >
+            <div className="plans-pricing-container21">
+              <span id="e-commerce" className="plans-pricing-text22 heading3">
                 <span>e-commerce</span>
                 <br></br>
               </span>
@@ -327,54 +298,63 @@ const PlansPricing = (props) => {
                 A comprehensive website for growing businesses that 
               </span>
             </div>
-            <div className="plans-pricing-container20">
-              <span className="plans-pricing-text37">
+            <div className="plans-pricing-container22">
+              <span className="plans-pricing-text25">
                 <span>$</span>
                 <span></span>
               </span>
               <span className="plans-pricing-pro-plan-pricing">1497</span>
             </div>
-            <div className="plans-pricing-container21">
-              <div className="plans-pricing-container22">
-                <span className="plans-pricing-text40">✔</span>
+            <div className="plans-pricing-container23">
+              <div className="plans-pricing-container24">
+                <span className="plans-pricing-text28">✔</span>
                 <span className="bodySmall">
                    All features of PROFESSIONAL website
                 </span>
               </div>
-              <div className="plans-pricing-container23">
-                <span className="plans-pricing-text42">✔</span>
+              <div className="plans-pricing-container25">
+                <span className="plans-pricing-text30">✔</span>
                 <span className="bodySmall">
                   Ability to Sell Unlimited # of Products or Services
                 </span>
               </div>
-              <div className="plans-pricing-container24">
-                <span className="plans-pricing-text43">✔</span>
+              <div className="plans-pricing-container26">
+                <span className="plans-pricing-text31">✔</span>
                 <span className="bodySmall">Premium Logo design</span>
               </div>
-              <div className="plans-pricing-container25">
-                <span className="plans-pricing-text44">✔</span>
+              <div className="plans-pricing-container27">
+                <span className="plans-pricing-text32">✔</span>
                 <span className="bodySmall">Premium SEO</span>
               </div>
-              <div className="plans-pricing-container26">
-                <span className="plans-pricing-text45">✔</span>
+              <div className="plans-pricing-container28">
+                <span className="plans-pricing-text33">✔</span>
                 <span className="bodySmall">
                   Extensive business coaching via ZOOM
                 </span>
               </div>
             </div>
-            <button className="plans-pricing-button2 buttonFilledSecondary">
+            <a
+              href="mailto:website@kristash.com?subject=I Need an E-commerce Website"
+              className="plans-pricing-link2 buttonFilledSecondary"
+            >
               Build me an E-COMMERCE website
-            </button>
+            </a>
           </div>
         </div>
       </div>
       <div className="plans-pricing-features">
         <div className="plans-pricing-features-container featuresContainer">
-          <div className="plans-pricing-features1">
-            <h2 className="plans-pricing-features-heading heading2">
+          <div id="services section" className="plans-pricing-features1">
+            <h2
+              id="our services"
+              className="plans-pricing-features-heading heading2"
+            >
               Our Services
             </h2>
-            <div className="plans-pricing-our-services-container">
+            <div
+              id="our services section"
+              className="plans-pricing-our-services-container"
+            >
               <FeatureCard
                 heading="Website Design"
                 subHeading="Custom and responsive website designs that showcase your brand."
@@ -404,103 +384,113 @@ const PlansPricing = (props) => {
         </div>
       </div>
       <div className="plans-pricing-footer">
-        <footer className="footerContainer plans-pricing-footer1">
-          <div className="plans-pricing-container27">
+        <footer id="footer" className="footerContainer plans-pricing-footer1">
+          <div className="plans-pricing-container29">
+            <div className="plans-pricing-container30">
+              <a
+                href="https://kristash.com"
+                id="kristash"
+                target="_blank"
+                rel="noreferrer noopener"
+                className="plans-pricing-logo2"
+              >
+                Kristash
+              </a>
+            </div>
+          </div>
+          <nav className="plans-pricing-nav1 bodySmall plans-pricing-nav1">
+            <Link to="/" id="home" className="plans-pricing-home1 bodySmall">
+              Home
+            </Link>
+            <Link to="/faq" id="faq" className="plans-pricing-faq1 bodySmall">
+              FAQ
+            </Link>
+            <Link
+              to="/plans-pricing"
+              id="plans &amp; pricing"
+              className="plans-pricing-plans-pricing1 bodySmall"
+            >
+              Plans &amp; Pricing
+            </Link>
+            <Link
+              to="/portfolio"
+              id="portfolio"
+              className="plans-pricing-portfolio1 bodySmall"
+            >
+              Portfolio
+            </Link>
+            <Link
+              to="/resources"
+              id="resources"
+              className="plans-pricing-resources1 bodySmall"
+            >
+              Resources
+            </Link>
+            <span id="contact" className="plans-pricing-contact1 bodySmall">
+              Contact
+            </span>
+          </nav>
+          <div className="plans-pricing-separator"></div>
+          <span className="plans-pricing-text34">
+            <span className="bodySmall">
+              Copyright © 2024,
+              <span
+                dangerouslySetInnerHTML={{
+                  __html: ' ',
+                }}
+              />
+            </span>
             <a
               href="https://kristash.com"
               target="_blank"
               rel="noreferrer noopener"
-              className="plans-pricing-logo2"
+              className="plans-pricing-link3"
             >
               Kristash
             </a>
-            <nav className="plans-pricing-nav1 bodySmall plans-pricing-nav1">
-              <Link to="/" className="plans-pricing-home1 bodySmall">
-                Home
-              </Link>
-              <Link to="/faq" className="plans-pricing-faq1 bodySmall">
-                FAQ
-              </Link>
-              <Link
-                to="/plans-pricing"
-                className="plans-pricing-plans-pricing1 bodySmall"
+            <span className="bodySmall">. All Rights Reserved.</span>
+          </span>
+          <div className="plans-pricing-icon-group1">
+            <a
+              href="https://twitter.com/kristashinc"
+              className="plans-pricing-link4"
+            >
+              <svg
+                id="twitter icon"
+                viewBox="0 0 950.8571428571428 1024"
+                className="plans-pricing-twitter-icon socialIcons"
               >
-                Plans &amp; Pricing
-              </Link>
-              <Link
-                to="/portfolio"
-                className="plans-pricing-portfolio1 bodySmall"
+                <path d="M925.714 233.143c-25.143 36.571-56.571 69.143-92.571 95.429 0.571 8 0.571 16 0.571 24 0 244-185.714 525.143-525.143 525.143-104.571 0-201.714-30.286-283.429-82.857 14.857 1.714 29.143 2.286 44.571 2.286 86.286 0 165.714-29.143 229.143-78.857-81.143-1.714-149.143-54.857-172.571-128 11.429 1.714 22.857 2.857 34.857 2.857 16.571 0 33.143-2.286 48.571-6.286-84.571-17.143-148-91.429-148-181.143v-2.286c24.571 13.714 53.143 22.286 83.429 23.429-49.714-33.143-82.286-89.714-82.286-153.714 0-34.286 9.143-65.714 25.143-93.143 90.857 112 227.429 185.143 380.571 193.143-2.857-13.714-4.571-28-4.571-42.286 0-101.714 82.286-184.571 184.571-184.571 53.143 0 101.143 22.286 134.857 58.286 41.714-8 81.714-23.429 117.143-44.571-13.714 42.857-42.857 78.857-81.143 101.714 37.143-4 73.143-14.286 106.286-28.571z"></path>
+              </svg>
+            </a>
+            <a
+              href="https://instagram.com/kristashinc"
+              className="plans-pricing-link5"
+            >
+              <svg
+                id="instagram icon"
+                viewBox="0 0 877.7142857142857 1024"
+                className="plans-pricing-instagram-icon socialIcons"
               >
-                Portfolio
-              </Link>
-              <Link
-                to="/resources"
-                className="plans-pricing-resources1 bodySmall"
+                <path d="M585.143 512c0-80.571-65.714-146.286-146.286-146.286s-146.286 65.714-146.286 146.286 65.714 146.286 146.286 146.286 146.286-65.714 146.286-146.286zM664 512c0 124.571-100.571 225.143-225.143 225.143s-225.143-100.571-225.143-225.143 100.571-225.143 225.143-225.143 225.143 100.571 225.143 225.143zM725.714 277.714c0 29.143-23.429 52.571-52.571 52.571s-52.571-23.429-52.571-52.571 23.429-52.571 52.571-52.571 52.571 23.429 52.571 52.571zM438.857 152c-64 0-201.143-5.143-258.857 17.714-20 8-34.857 17.714-50.286 33.143s-25.143 30.286-33.143 50.286c-22.857 57.714-17.714 194.857-17.714 258.857s-5.143 201.143 17.714 258.857c8 20 17.714 34.857 33.143 50.286s30.286 25.143 50.286 33.143c57.714 22.857 194.857 17.714 258.857 17.714s201.143 5.143 258.857-17.714c20-8 34.857-17.714 50.286-33.143s25.143-30.286 33.143-50.286c22.857-57.714 17.714-194.857 17.714-258.857s5.143-201.143-17.714-258.857c-8-20-17.714-34.857-33.143-50.286s-30.286-25.143-50.286-33.143c-57.714-22.857-194.857-17.714-258.857-17.714zM877.714 512c0 60.571 0.571 120.571-2.857 181.143-3.429 70.286-19.429 132.571-70.857 184s-113.714 67.429-184 70.857c-60.571 3.429-120.571 2.857-181.143 2.857s-120.571 0.571-181.143-2.857c-70.286-3.429-132.571-19.429-184-70.857s-67.429-113.714-70.857-184c-3.429-60.571-2.857-120.571-2.857-181.143s-0.571-120.571 2.857-181.143c3.429-70.286 19.429-132.571 70.857-184s113.714-67.429 184-70.857c60.571-3.429 120.571-2.857 181.143-2.857s120.571-0.571 181.143 2.857c70.286 3.429 132.571 19.429 184 70.857s67.429 113.714 70.857 184c3.429 60.571 2.857 120.571 2.857 181.143z"></path>
+              </svg>
+            </a>
+            <a
+              href="https://facebook.com/KristashInc"
+              target="_blank"
+              rel="noreferrer noopener"
+              className="plans-pricing-link6"
+            >
+              <svg
+                id="facebook icon"
+                viewBox="0 0 602.2582857142856 1024"
+                className="plans-pricing-facebook-icon socialIcons"
               >
-                Resources
-              </Link>
-              <span className="plans-pricing-contact1 bodySmall">Contact</span>
-            </nav>
+                <path d="M548 6.857v150.857h-89.714c-70.286 0-83.429 33.714-83.429 82.286v108h167.429l-22.286 169.143h-145.143v433.714h-174.857v-433.714h-145.714v-169.143h145.714v-124.571c0-144.571 88.571-223.429 217.714-223.429 61.714 0 114.857 4.571 130.286 6.857z"></path>
+              </svg>
+            </a>
           </div>
-          <div className="plans-pricing-separator"></div>
-          <div className="plans-pricing-container28">
-            <span className="plans-pricing-text46">
-              <span className="bodySmall">
-                Copyright © 2024,
-                <span
-                  dangerouslySetInnerHTML={{
-                    __html: ' ',
-                  }}
-                />
-              </span>
-              <a
-                href="https://kristash.com"
-                target="_blank"
-                rel="noreferrer noopener"
-                className="plans-pricing-link"
-              >
-                Kristash
-              </a>
-              <span className="bodySmall">. All Rights Reserved.</span>
-            </span>
-            <div className="plans-pricing-icon-group1">
-              <a
-                href="https://twitter.com/kristashinc"
-                className="plans-pricing-link1"
-              >
-                <svg
-                  viewBox="0 0 950.8571428571428 1024"
-                  className="plans-pricing-icon10 socialIcons"
-                >
-                  <path d="M925.714 233.143c-25.143 36.571-56.571 69.143-92.571 95.429 0.571 8 0.571 16 0.571 24 0 244-185.714 525.143-525.143 525.143-104.571 0-201.714-30.286-283.429-82.857 14.857 1.714 29.143 2.286 44.571 2.286 86.286 0 165.714-29.143 229.143-78.857-81.143-1.714-149.143-54.857-172.571-128 11.429 1.714 22.857 2.857 34.857 2.857 16.571 0 33.143-2.286 48.571-6.286-84.571-17.143-148-91.429-148-181.143v-2.286c24.571 13.714 53.143 22.286 83.429 23.429-49.714-33.143-82.286-89.714-82.286-153.714 0-34.286 9.143-65.714 25.143-93.143 90.857 112 227.429 185.143 380.571 193.143-2.857-13.714-4.571-28-4.571-42.286 0-101.714 82.286-184.571 184.571-184.571 53.143 0 101.143 22.286 134.857 58.286 41.714-8 81.714-23.429 117.143-44.571-13.714 42.857-42.857 78.857-81.143 101.714 37.143-4 73.143-14.286 106.286-28.571z"></path>
-                </svg>
-              </a>
-              <a
-                href="https://instagram.com/kristashinc"
-                className="plans-pricing-link2"
-              >
-                <svg
-                  viewBox="0 0 877.7142857142857 1024"
-                  className="plans-pricing-icon12 socialIcons"
-                >
-                  <path d="M585.143 512c0-80.571-65.714-146.286-146.286-146.286s-146.286 65.714-146.286 146.286 65.714 146.286 146.286 146.286 146.286-65.714 146.286-146.286zM664 512c0 124.571-100.571 225.143-225.143 225.143s-225.143-100.571-225.143-225.143 100.571-225.143 225.143-225.143 225.143 100.571 225.143 225.143zM725.714 277.714c0 29.143-23.429 52.571-52.571 52.571s-52.571-23.429-52.571-52.571 23.429-52.571 52.571-52.571 52.571 23.429 52.571 52.571zM438.857 152c-64 0-201.143-5.143-258.857 17.714-20 8-34.857 17.714-50.286 33.143s-25.143 30.286-33.143 50.286c-22.857 57.714-17.714 194.857-17.714 258.857s-5.143 201.143 17.714 258.857c8 20 17.714 34.857 33.143 50.286s30.286 25.143 50.286 33.143c57.714 22.857 194.857 17.714 258.857 17.714s201.143 5.143 258.857-17.714c20-8 34.857-17.714 50.286-33.143s25.143-30.286 33.143-50.286c22.857-57.714 17.714-194.857 17.714-258.857s5.143-201.143-17.714-258.857c-8-20-17.714-34.857-33.143-50.286s-30.286-25.143-50.286-33.143c-57.714-22.857-194.857-17.714-258.857-17.714zM877.714 512c0 60.571 0.571 120.571-2.857 181.143-3.429 70.286-19.429 132.571-70.857 184s-113.714 67.429-184 70.857c-60.571 3.429-120.571 2.857-181.143 2.857s-120.571 0.571-181.143-2.857c-70.286-3.429-132.571-19.429-184-70.857s-67.429-113.714-70.857-184c-3.429-60.571-2.857-120.571-2.857-181.143s-0.571-120.571 2.857-181.143c3.429-70.286 19.429-132.571 70.857-184s113.714-67.429 184-70.857c60.571-3.429 120.571-2.857 181.143-2.857s120.571-0.571 181.143 2.857c70.286 3.429 132.571 19.429 184 70.857s67.429 113.714 70.857 184c3.429 60.571 2.857 120.571 2.857 181.143z"></path>
-                </svg>
-              </a>
-              <a
-                href="https://facebook.com/kristashinc"
-                target="_blank"
-                rel="noreferrer noopener"
-                className="plans-pricing-link3"
-              >
-                <svg
-                  viewBox="0 0 602.2582857142856 1024"
-                  className="plans-pricing-icon14 socialIcons"
-                >
-                  <path d="M548 6.857v150.857h-89.714c-70.286 0-83.429 33.714-83.429 82.286v108h167.429l-22.286 169.143h-145.143v433.714h-174.857v-433.714h-145.714v-169.143h145.714v-124.571c0-144.571 88.571-223.429 217.714-223.429 61.714 0 114.857 4.571 130.286 6.857z"></path>
-                </svg>
-              </a>
-            </div>
-          </div>
+          <div className="plans-pricing-container31"></div>
         </footer>
       </div>
     </div>

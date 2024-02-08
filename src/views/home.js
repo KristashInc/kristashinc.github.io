@@ -33,6 +33,7 @@ const Home = (props) => {
         >
           <a
             href="https://kristash.com"
+            id="kristash logo"
             target="_blank"
             rel="noreferrer noopener"
             className="home-logo logo"
@@ -140,7 +141,10 @@ const Home = (props) => {
       <div className="home-hero">
         <div className="home-hero1 heroContainer">
           <div className="home-container01">
-            <h1 className="home-hero-heading heading1">
+            <h1
+              id="welcome to our online marketing agency"
+              className="home-hero-heading heading1"
+            >
               Welcome to our Online Marketing Agency
             </h1>
             <span className="home-hero-sub-heading bodyLarge">
@@ -210,35 +214,66 @@ const Home = (props) => {
               </span>
             </span>
             <div className="home-btn-group">
-              <button className="buttonFilled">Get Started</button>
-              <button className="buttonFlat">Learn More →</button>
+              <a
+                href="tel:+15312701723"
+                id="call us"
+                className="home-hero-button1 buttonFilled"
+              >
+                Call Us
+              </a>
+              <Link
+                to="/plans-pricing"
+                id="learn more"
+                className="home-hero-button2 buttonFlat"
+              >
+                Learn More →
+              </Link>
             </div>
           </div>
         </div>
       </div>
       <div className="home-container02">
-        <h2 className="home-text14">What&apos;s your SEO score?</h2>
+        <h2 id="what's your seo score?" className="home-text14">
+          What&apos;s your SEO score?
+        </h2>
         <div className="home-container03">
           <div className="home-container04">
-            <Script
-              html={`<!-- Begin MySiteAuditor -->
-<script src="//cdn.mysiteauditor.com/audit-tool.js" type="text/javascript"></script>
+            <React.Fragment>
+              <React.Fragment>
+                {/* Begin MySiteAuditor */}
+                <Script
+                  src="//cdn.mysiteauditor.com/audit-tool.js"
+                  type="text/javascript"
+                />
 
-<div id="seogroup-embed"  data-apikey="e3be6b3d12972592de7794d0b8bae48e0889223d" data-language="english" data-type="slim" data-hex-color="#000000" data-hex-cta-color="#566822" data-hex-text="#FFFFFF" data-load-bar-color="#61B13B" data-font="Roboto"></div>
-<!-- End MySiteAuditor -->`}
-            ></Script>
+                <div
+                  id="seogroup-embed"
+                  data-apikey="e3be6b3d12972592de7794d0b8bae48e0889223d"
+                  data-language="english"
+                  data-type="slim"
+                  data-hex-color="#000000"
+                  data-hex-cta-color="#566822"
+                  data-hex-text="#FFFFFF"
+                  data-load-bar-color="#61B13B"
+                  data-font="Roboto"
+                />
+                {/* End MySiteAuditor */}
+              </React.Fragment>
+            </React.Fragment>
           </div>
         </div>
       </div>
       <div className="home-features">
         <div className="featuresContainer">
-          <div className="home-features1">
+          <div id="services section" className="home-features1">
             <div className="home-container05">
-              <span className="overline">
+              <span id="features" className="overline">
                 <span>features</span>
                 <br></br>
               </span>
-              <h2 className="home-features-heading heading2">Our Services</h2>
+              <h2 id="our services" className="home-features-heading heading2">
+                Our Services
+              </h2>
               <span className="home-features-sub-heading bodyLarge">
                 <span>
                   <span>
@@ -306,7 +341,7 @@ const Home = (props) => {
                 </span>
               </span>
             </div>
-            <div className="home-container06">
+            <div id="our services section" className="home-container06">
               <FeatureCard
                 heading="Website Design"
                 subHeading="Custom and responsive website designs that showcase your brand."
@@ -338,11 +373,13 @@ const Home = (props) => {
       <div className="home-pricing">
         <div className="pricingContainer home-pricing1">
           <div className="home-container07">
-            <span className="overline">
+            <span id="pricing" className="overline">
               <span>Pricing</span>
               <br></br>
             </span>
-            <h2 className="heading2">Choose the Website for Your Business</h2>
+            <h2 className="heading2 home-pricing-heading">
+              Choose the Website for Your Business
+            </h2>
             <span className="home-pricing-sub-heading bodyLarge">
               <span>
                 <span>
@@ -352,9 +389,14 @@ const Home = (props) => {
             </span>
           </div>
           <div className="home-container08">
-            <div className="freePricingCard home-pricing-card">
+            <div
+              id="portfolio website"
+              className="freePricingCard home-pricing-card"
+            >
               <div className="home-container09">
-                <span className="home-text37 heading3">Portfolio</span>
+                <span id="portfolio site" className="home-text37 heading3">
+                  Portfolio
+                </span>
                 <span>
                   A basic website for an artist or musician that wants to
                   showcase their art/music.
@@ -378,17 +420,21 @@ const Home = (props) => {
                 </div>
                 <div className="home-container14">
                   <span className="home-text43">✔</span>
-                  <span className="bodySmall">Basic SEO</span>
+                  <span className="bodySmall">Mobile-friendly design</span>
                 </div>
                 <div className="home-container15">
                   <span className="home-text44">✔</span>
+                  <span className="bodySmall">Basic SEO</span>
+                </div>
+                <div className="home-container16">
+                  <span className="home-text45">✔</span>
                   <span className="bodySmall">
                      Headless CMS integration for adding/updating website
                     content
                   </span>
                 </div>
-                <div className="home-container16">
-                  <span className="home-text45">
+                <div className="home-container17">
+                  <span className="home-text46">
                     <br></br>
                     <span>✔</span>
                   </span>
@@ -398,55 +444,73 @@ const Home = (props) => {
                   </span>
                 </div>
               </div>
-              <button className="home-button buttonOutline">
+              <a
+                href="mailto:website@kristash.com?subject=I Need a Portfolio Website"
+                className="home-link buttonOutline"
+              >
                 Continue with a PORTFOLIO site
-              </button>
+              </a>
             </div>
-            <div className="basicPricingCard home-pricing-card1">
-              <div className="home-container17">
-                <span className="home-text50 heading3">Professional</span>
+            <div
+              id="professional website"
+              className="basicPricingCard home-pricing-card1"
+            >
+              <div className="home-container18">
+                <span id="professional" className="home-text51 heading3">
+                  Professional
+                </span>
                 <span>
                   An affordable SEO-optimized website for small businesses that
                   are primarily service-based. (Tattoo artists, barbers,
                   cleaners, chiropractors, holistic health practitioners; etc.)
                 </span>
               </div>
-              <div className="home-container18">
-                <span className="home-text51">
+              <div className="home-container19">
+                <span className="home-text52">
                   <span>$</span>
                   <span></span>
                 </span>
                 <span className="home-basic-plan-pricing">897</span>
               </div>
-              <div className="home-container19">
-                <div className="home-container20">
-                  <span className="home-text54">✔</span>
+              <div className="home-container20">
+                <div className="home-container21">
+                  <span className="home-text55">✔</span>
                   <span className="bodySmall">
                     All features of PORTFOLIO site, PLUS:
                   </span>
                 </div>
-                <div className="home-container21">
-                  <span className="home-text56">✔</span>
-                  <span>Take appointments via a Booking Plugin</span>
-                </div>
                 <div className="home-container22">
                   <span className="home-text57">✔</span>
-                  <span className="bodySmall">Advanced SEO</span>
+                  <span>Take appointments via a Booking Plugin</span>
                 </div>
                 <div className="home-container23">
                   <span className="home-text58">✔</span>
+                  <span>Mobile-optimized design</span>
+                </div>
+                <div className="home-container24">
+                  <span className="home-text59">✔</span>
+                  <span className="bodySmall">Advanced SEO</span>
+                </div>
+                <div className="home-container25">
+                  <span className="home-text60">✔</span>
                   <span className="bodySmall">
                     Business coaching ZOOM session (2x)
                   </span>
                 </div>
               </div>
-              <button className="home-button1 buttonFilledSecondary">
+              <a
+                href="mailto:website@kristash.com?subject=I Need a Professional Website"
+                className="home-link1 buttonFilledSecondary"
+              >
                 Build me a PROFESSIONAL website
-              </button>
+              </a>
             </div>
-            <div className="proPricingCard home-pricing-card2">
-              <div className="home-container24">
-                <span className="home-text59 heading3">
+            <div
+              id="e-commerce website"
+              className="proPricingCard home-pricing-card2"
+            >
+              <div className="home-container26">
+                <span id="e-commerce" className="home-text61 heading3">
                   <span>e-commerce</span>
                   <br></br>
                 </span>
@@ -454,44 +518,47 @@ const Home = (props) => {
                   A comprehensive plan for growing businesses
                 </span>
               </div>
-              <div className="home-container25">
-                <span className="home-text62">
+              <div className="home-container27">
+                <span className="home-text64">
                   <span>$</span>
                   <span></span>
                 </span>
                 <span className="home-pro-plan-pricing">1497</span>
               </div>
-              <div className="home-container26">
-                <div className="home-container27">
-                  <span className="home-text65">✔</span>
+              <div className="home-container28">
+                <div className="home-container29">
+                  <span className="home-text67">✔</span>
                   <span className="bodySmall">
                      All features of PROFESSIONAL website
                   </span>
                 </div>
-                <div className="home-container28">
-                  <span className="home-text67">✔</span>
+                <div className="home-container30">
+                  <span className="home-text69">✔</span>
                   <span>
                     Ability to Sell Unlimited # of Products or Services
                   </span>
                 </div>
-                <div className="home-container29">
-                  <span className="home-text68">✔</span>
-                  <span className="bodySmall">Premium Logo design</span>
-                </div>
-                <div className="home-container30">
-                  <span className="home-text69">✔</span>
-                  <span className="bodySmall">Premium SEO</span>
-                </div>
                 <div className="home-container31">
                   <span className="home-text70">✔</span>
+                  <span className="bodySmall">Premium Logo design</span>
+                </div>
+                <div className="home-container32">
+                  <span className="home-text71">✔</span>
+                  <span className="bodySmall">Premium SEO</span>
+                </div>
+                <div className="home-container33">
+                  <span className="home-text72">✔</span>
                   <span className="bodySmall">
                     Extensive business coaching via ZOOM
                   </span>
                 </div>
               </div>
-              <button className="home-button2 buttonFilledSecondary">
+              <a
+                href="mailto:website@kristash.com?subject=I Need an E-commerce Website"
+                className="home-link2 buttonFilledSecondary"
+              >
                 Build me an E-COMMERCE website
-              </button>
+              </a>
             </div>
           </div>
         </div>
@@ -501,9 +568,6 @@ const Home = (props) => {
           <h1 className="home-banner-heading heading2">
             We Design, Optimize, and Coach for Success
           </h1>
-          <button type="button" className="buttonFilled home-banner-button">
-            Learn More
-          </button>
           <span className="home-banner-sub-heading bodySmall">
             <span>
               <span>
@@ -574,25 +638,34 @@ const Home = (props) => {
               </span>
             </span>
           </span>
+          <Link
+            to="/contact"
+            id="contact us"
+            className="home-banner-button buttonFilled"
+          >
+            Contact Us
+          </Link>
         </div>
       </div>
       <div className="home-faq2">
         <div className="faqContainer">
           <div className="home-faq3">
-            <div className="home-container32">
-              <span className="overline">
+            <div className="home-container34">
+              <span id="faq section" className="overline">
                 <span>FAQ</span>
                 <br></br>
               </span>
-              <h2 className="home-text88 heading2">Common Questions</h2>
-              <span className="home-text89 bodyLarge">
+              <h2 id="faq: common questions" className="home-text90 heading2">
+                Common Questions
+              </h2>
+              <span className="home-text91 bodyLarge">
                 <span>
                   Here are some of the most common questions that we get.
                 </span>
                 <br></br>
               </span>
             </div>
-            <div className="home-container33">
+            <div id="faq section" className="home-container35">
               <Question1
                 answer="Our online marketing agency offers website design, logo design, SEO, and business coaching services to businesses and startups."
                 question="What services does your online marketing agency offer?"
@@ -619,9 +692,10 @@ const Home = (props) => {
       </div>
       <div className="home-footer">
         <footer className="footerContainer home-footer1">
-          <div className="home-container34">
+          <div className="home-container36">
             <a
               href="https://kristash.com"
+              id="kristash"
               target="_blank"
               rel="noreferrer noopener"
               className="home-logo2"
@@ -629,32 +703,45 @@ const Home = (props) => {
               Kristash
             </a>
             <nav className="home-nav1">
-              <Link to="/" className="home-home2 bodySmall">
+              <Link to="/" id="home" className="home-home2 bodySmall">
                 Home
               </Link>
-              <Link to="/faq" className="home-faq4 bodySmall">
+              <Link to="/faq" id="faq" className="home-faq4 bodySmall">
                 FAQ
               </Link>
               <Link
                 to="/plans-pricing"
+                id="plans &amp; pricing"
                 className="home-plans-pricing2 bodySmall"
               >
                 Plans &amp; Pricing
               </Link>
-              <Link to="/portfolio" className="home-portfolio2 bodySmall">
+              <Link
+                to="/portfolio"
+                id="portfolio"
+                className="home-portfolio2 bodySmall"
+              >
                 Portfolio
               </Link>
-              <Link to="/resources" className="home-resources2 bodySmall">
+              <Link
+                to="/resources"
+                id="resources"
+                className="home-resources2 bodySmall"
+              >
                 Resources
               </Link>
-              <Link to="/contact" className="home-contact2 bodySmall">
+              <Link
+                to="/contact"
+                id="contact"
+                className="home-contact2 bodySmall"
+              >
                 Contact
               </Link>
             </nav>
           </div>
           <div className="home-separator"></div>
-          <div className="home-container35">
-            <span className="home-text92">
+          <div className="home-container37">
+            <span className="home-text94">
               <span className="bodySmall">
                 Copyright © 2024,
                 <span
@@ -667,15 +754,16 @@ const Home = (props) => {
                 href="https://kristash.com"
                 target="_blank"
                 rel="noreferrer noopener"
-                className="home-link"
+                className="home-link3"
               >
                 Kristash
               </a>
               <span className="bodySmall">. All Rights Reserved.</span>
             </span>
             <div className="home-icon-group1">
-              <a href="https://twitter.com/kristashinc" className="home-link1">
+              <a href="https://twitter.com/kristashinc" className="home-link4">
                 <svg
+                  id="twitter icon"
                   viewBox="0 0 950.8571428571428 1024"
                   className="home-icon10 socialIcons"
                 >
@@ -684,9 +772,10 @@ const Home = (props) => {
               </a>
               <a
                 href="https://instagram.com/kristashinc"
-                className="home-link2"
+                className="home-link5"
               >
                 <svg
+                  id="instagram icon"
                   viewBox="0 0 877.7142857142857 1024"
                   className="home-icon12 socialIcons"
                 >
@@ -697,9 +786,10 @@ const Home = (props) => {
                 href="https://facebook.com/kristashinc"
                 target="_blank"
                 rel="noreferrer noopener"
-                className="home-link3"
+                className="home-link6"
               >
                 <svg
+                  id="facebook icon"
                   viewBox="0 0 602.2582857142856 1024"
                   className="home-icon14 socialIcons"
                 >

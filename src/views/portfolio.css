@@ -441,6 +441,7 @@
 }
 @media(max-width: 479px) {
   .portfolio-navbar-interactive {
+    height: 99px;
     padding: var(--dl-space-space-unit);
   }
   .portfolio-mobile-menu1 {
